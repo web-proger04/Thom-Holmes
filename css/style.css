@@ -1,9 +1,10 @@
-* {
+* { 
 	box-sizing: border-box;
-}
+} 
  
 body {
 	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
 }
 
 body, div, form, h1, h2, h3, h4, h5, h6, input, li, p, textarea, ul {
@@ -39,10 +40,11 @@ li {
 /*Header*/
 .header {
 	color: #fff;
-	padding: 50px 0px;
-	background-image: url('../img/thom-holmes1.png');
-	background-size: cover;
-	background-repeat: no-repeat;
+    padding: 50px 0px;
+    background-image: url(../img/thom-holmes1.png);
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header__head {
@@ -77,6 +79,10 @@ li {
 .header__head__telephone {
 	font-weight: 900;
 	margin-right: 72px;
+}
+
+.header__head__hamburger {
+	cursor: pointer;
 }
 
 .header__head__hamburger span {
@@ -172,6 +178,7 @@ li {
 .about-me__info {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .about-me__image {
@@ -316,6 +323,7 @@ li {
 .flex__work__columns {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .flex__work__columns .work__item:nth-child(1) {
@@ -450,11 +458,12 @@ li {
 .flex__contacts__filling-form {
 	display: flex;
 	flex-direction: column;
-	margin-left: 60px;
+	margin-left: 50px;
 }
 
 .flex__contacts {
 	display: flex;
+	flex-wrap: 	wrap;
 }
 
 .contacts__title {
@@ -526,5 +535,136 @@ li {
 	font-size: 15px;
 	color: #ffffff;
 }
+
+
+
+
+
+/*Respontive*/
+/*992px - 1200px*/
+
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+
+	.about-me__text {
+		margin: 30px 0 0 0;
+	}
+
+	.options__title {
+		font-size: 30px;	
+	}
+
+	.options__portfolio {
+		width: 482px;	
+		height: 312px;
+		background-size: cover;	
+	}
+
+	.options__portfolio__body {
+		top:30px;
+		left: 20px;
+	}
+
+	.options__personal-photoshoot {
+		width: 482px;	
+		height: 312px;
+		background-size: cover;
+	}
+
+	.options__personal-photoshoot__body {
+		top:30px;
+		left: 20px;
+	}
+
+	.options__lookbook {
+		width: 482px;	
+		height: 312px;
+		background-size: cover;		
+	}
+
+	.options__lookbook__body {
+		top:30px;
+		left: 20px;
+	}
+
+	.options__wedding {
+		width: 482px;	
+		height: 312px;
+		background-size: cover;		
+	}
+
+	.options__wedding__body {
+		top:30px;
+		left: 20px;
+	}
+
+	.image-rov {
+		width: 226px;	
+		height: 654px;
+		background-size: cover;
+	}
+
+	.flex__prices__columns {
+		flex-wrap: wrap-reverse;
+		justify-content: center;	
+	}
+
+	.prices__item:last-child {
+		margin-bottom: 30px;	
+	}
+
+	.prices__item:first-child {
+		margin-right: 30px;	
+	}
+}
+
+/*768px - 992px*/
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;	
+	}
+
+	h2 {
+		font-size: 30px;	
+	}
+
+	.flex__work__columns {
+	    flex-direction: column;
+	}
+
+	.flex__work__columns .work__item:nth-child(2) {
+        margin: 0;
+	}
+
+	.flex__work__columns .work__item:nth-child(3) {
+        margin: 0;
+	}
+
+	.flex__contacts__filling-form {
+		margin: 60px 0 0 0;
+	}
+
+	.prices__item:first-child {
+        margin: 30px 0 0 0;
+    }
+
+    .contacts__image {
+    	width: 482px;
+        height: 347px;
+    }
+
+}
+
+/*576px - 768px*/
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+}
+
+
+
 
 
