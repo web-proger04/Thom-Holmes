@@ -1,6 +1,6 @@
 * { 
 	box-sizing: border-box;
-} 
+}  
  
 body {
 	font-family: 'Montserrat', sans-serif;
@@ -560,6 +560,7 @@ li {
 		width: 482px;	
 		height: 312px;
 		background-size: cover;	
+		border-radius: 10px;
 	}
 
 	.options__portfolio__body {
@@ -571,6 +572,7 @@ li {
 		width: 482px;	
 		height: 312px;
 		background-size: cover;
+		border-radius: 10px;
 	}
 
 	.options__personal-photoshoot__body {
@@ -581,7 +583,8 @@ li {
 	.options__lookbook {
 		width: 482px;	
 		height: 312px;
-		background-size: cover;		
+		background-size: cover;	
+		border-radius: 10px;	
 	}
 
 	.options__lookbook__body {
@@ -592,7 +595,8 @@ li {
 	.options__wedding {
 		width: 482px;	
 		height: 312px;
-		background-size: cover;		
+		background-size: cover;	
+		border-radius: 10px;	
 	}
 
 	.options__wedding__body {
@@ -604,6 +608,7 @@ li {
 		width: 226px;	
 		height: 654px;
 		background-size: cover;
+		border-radius: 10px;
 	}
 
 	.flex__prices__columns {
@@ -719,6 +724,14 @@ li {
 		font-size: 13px;
 	}
 
+	.header {
+		padding: 30px 0;
+	}
+
+	.header__offer {
+		margin: 100px 0 100px;
+	}
+
 	.header__head__telephone {
 		display: none;
 	}
@@ -727,24 +740,8 @@ li {
 		display: none;
 	}
 
-	.about-me {
-		text-align: center;
-	}
-
-	.about-me__image {
-		margin: 0 auto;
-	}
-
-	.about-me__info {
-		justify-content: center;
-	}
-
 	.contacts__image {
 		display: none;
-	}
-
-	.flex__options {
-		justify-content: center;
 	}
 
 	.options__row1 {
@@ -763,7 +760,8 @@ li {
 	.options__portfolio {
 		width: 290px;	
 		height: 209px;
-		background-size: cover;	
+		background-size: cover;
+		border-radius: 10px;	
 	}
 
 	.options__portfolio__body {
@@ -775,6 +773,7 @@ li {
 		width: 290px;	
 		height: 209px;
 		background-size: cover;
+		border-radius: 10px;
 	}
 
 	.options__personal-photoshoot__body {
@@ -785,7 +784,8 @@ li {
 	.options__lookbook {
 		width: 290px;	
 		height: 209px;
-		background-size: cover;		
+		background-size: cover;
+		border-radius: 10px;		
 	}
 
 	.options__lookbook__body {
@@ -796,7 +796,8 @@ li {
 	.options__wedding {
 		width: 290px;	
 		height: 209px;
-		background-size: cover;		
+		background-size: cover;
+		border-radius: 10px;		
 	}
 
 	.options__wedding__body {
@@ -810,32 +811,45 @@ li {
     	font-size: 16px;
 	}
 
-	.work__title {
-		text-align: center;
-	}
-
-	.prices__title {
-		text-align: center;
-	}
-
 	.prices__item {
 		width: 290px;
+		padding: 20px;
 	}
 
 	.prices__item__list li {
 		font-size: 13px;
 	}
 
-	.flex__contacts {
-		justify-content: center;
+	.item__image {
+		width: 50px;
+		margin-bottom: 20px;
 	}
 
-	/*.work__item {
-		margin: 0 auto !important;
-	}*/
+	.prices__item__title {
+		margin-bottom: 20px;
+	}
 
-	.flex__work__columns {
-		flex-direction: row;
+	.prices__item__price {
+		font-size: 25px;
+		margin-bottom: 20px;
+	}
+
+	.prices__item__paragraph {
+		margin-bottom: 20px;
+	}
+
+	.prices__item__description {
+		margin-bottom: 20px;
+	}
+
+	.item__btn {
+		width: 150px;
+		padding: 10px;
+
+	}
+
+	.flex__contacts {
+		justify-content: center;
 	}
 }
 
@@ -867,9 +881,9 @@ li {
 	}
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
 	.about-me__image {
-		width: 350px;
+		width: 300px;
 	}
 }
 
